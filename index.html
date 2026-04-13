@@ -4,140 +4,545 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Joshua van den Bergh | Data Scientist</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta
+    name="description"
+    content="Joshua van den Bergh portfolio - Data Scientist | Statistics & Data Science"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="navbar">
-    <div class="container nav-inner">
-      <div class="logo">Joshua van den Bergh</div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <div class="site-shell">
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="#home" class="brand">JVDB</a>
 
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-text">
-        <p class="eyebrow">Data Scientist | Statistics & Data Science</p>
-        <h1>Joshua van den Bergh</h1>
-        <p class="lead">
-          Transforming complex data into clear, actionable insights that drive strategy,
-          forecasting, and business decisions.
-        </p>
-        <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary">Contact Me</a>
-          <a href="assets/cv.pdf" class="btn btn-secondary" target="_blank">Download CV</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certificates</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero section-dark">
+        <div class="grid-overlay"></div>
+        <div class="container hero-grid">
+          <div class="hero-left reveal">
+            <div class="section-label">
+              <span class="label-line"></span>
+              <span>Portfolio</span>
+            </div>
+
+            <p class="hero-intro">I am</p>
+
+            <h1 class="hero-title">
+              <span class="gold-italic">Joshua</span> van den<br />
+              Bergh
+            </h1>
+
+            <p class="hero-subtitle">(Statistics &amp; Data Science)</p>
+
+            <div class="hero-role-wrap">
+              <span class="hero-dot"></span>
+              <span class="hero-role">Data Scientist</span>
+            </div>
+
+            <p class="hero-summary">
+              Transforming complex data into clear, actionable insights that
+              drive strategy, forecasting, and better business decisions.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-gold">Contact Me</a>
+              <a href="assets/cv.pdf" class="btn btn-outline" target="_blank">Download CV</a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-card">
+                <div class="stat-number">4+</div>
+                <div class="stat-label">Roles</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">4+</div>
+                <div class="stat-label">Projects</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Years Study</div>
+              </div>
+            </div>
+
+            <a href="#about" class="scroll-indicator">Scroll to explore</a>
+          </div>
+
+          <div class="hero-right reveal">
+            <div class="hero-image-frame">
+              <div class="corner corner-tl"></div>
+              <div class="corner corner-tr"></div>
+              <div class="corner corner-bl"></div>
+              <div class="corner corner-br"></div>
+
+              <img
+                src="assets/profile.png"
+                alt="Joshua van den Bergh profile photo"
+                class="hero-image"
+              />
+
+              <div class="location-card">
+                <span class="location-label">Based in</span>
+                <span class="location-value">South Africa</span>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="hero-card">
-        <img src="assets/profile.jpg" alt="Joshua van den Bergh profile photo" />
-        <div class="hero-card-content">
-          <h3>Professional Profile</h3>
-          <p>Focused on analytics, modelling, forecasting, and executive-ready insight.</p>
+        <div class="section-number">01</div>
+      </section>
+
+      <section id="about" class="section section-dark alt-section">
+        <div class="container two-column about-grid">
+          <div class="about-image reveal">
+            <div class="framed-image">
+              <div class="corner corner-tl"></div>
+              <div class="corner corner-tr"></div>
+              <div class="corner corner-bl"></div>
+              <div class="corner corner-br"></div>
+              <img src="assets/profile.png" alt="Joshua van den Bergh portrait" />
+            </div>
+          </div>
+
+          <div class="about-content reveal">
+            <div class="section-label">
+              <span class="label-line"></span>
+              <span>About Me</span>
+            </div>
+
+            <h2 class="section-heading">
+              Analytical mind,<br />
+              <span class="gold-italic">data-driven</span> results.
+            </h2>
+
+            <p>
+              I am a statistics and data science professional with a strong
+              academic foundation and practical experience turning complex data
+              into executive-ready insight. My work focuses on transforming raw
+              data into actionable intelligence that supports forecasting,
+              strategic planning, and measurable business value.
+            </p>
+
+            <p>
+              I enjoy building and validating models, communicating findings
+              clearly, and working across teams to solve real problems with
+              structured analytical thinking. My background spans insurance,
+              tutoring, operations analysis, and sports performance analytics.
+            </p>
+
+            <div class="tag-grid">
+              <span class="tag-pill">R</span>
+              <span class="tag-pill">Python</span>
+              <span class="tag-pill">SQL</span>
+              <span class="tag-pill">SAS</span>
+              <span class="tag-pill">Snowflake</span>
+              <span class="tag-pill">Machine Learning</span>
+              <span class="tag-pill">Statistical Modelling</span>
+              <span class="tag-pill">Forecasting</span>
+              <span class="tag-pill">Data Visualisation</span>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I am a statistics and data science professional with strong academic grounding and
-        practical experience turning complex data into executive-ready insights.
-      </p>
-    </div>
-  </section>
+        <div class="section-number">02</div>
+      </section>
 
-  <section id="experience" class="section alt">
-    <div class="container">
-      <h2>Experience</h2>
+      <section id="experience" class="section section-dark">
+        <div class="container">
+          <div class="section-label reveal">
+            <span class="label-line"></span>
+            <span>Experience</span>
+          </div>
 
-      <div class="card">
-        <h3>Data Scientist — Dotsure Insurance Company</h3>
-        <span>Dec 2025 – Present</span>
-        <p>Delivering executive-ready insights from large-scale data using advanced analytics, developing and validating models, and reporting findings clearly to senior stakeholders.</p>
-      </div>
+          <div class="section-header-row reveal">
+            <h2 class="section-heading large-heading">Professional experience.</h2>
+          </div>
 
-      <div class="card">
-        <h3>Statistic and Data Science Tutor — University of Pretoria</h3>
-        <span>Feb 2021 – Mar 2023</span>
-        <p>Supported students through one-on-one tutoring in mathematics and statistics using practical explanation and visual learning.</p>
-      </div>
+          <div class="experience-list">
+            <article class="experience-card reveal">
+              <div class="experience-top">
+                <div>
+                  <h3>Dotsure Insurance Company</h3>
+                  <h4>Data Scientist</h4>
+                  <p class="experience-meta">Dec 2025 – Present | Full-time</p>
+                </div>
+              </div>
 
-      <div class="card">
-        <h3>Performance Analyst — Hoerskool Eldoraigne</h3>
-        <span>Feb 2021 – Aug 2022</span>
-        <p>Applied predictive analysis techniques to improve strategy and athlete performance.</p>
-      </div>
+              <div class="divider"></div>
 
-      <div class="card">
-        <h3>Business Analyst — Venwood & Baker Electrical</h3>
-        <span>Jun 2022 – Jul 2022</span>
-        <p>Monitored organisational processes, analysed operational information, and identified efficiency improvements.</p>
-      </div>
-    </div>
-  </section>
+              <ul class="experience-points">
+                <li>Deliver executive-ready insights from large-scale data using advanced analytics and practical business interpretation.</li>
+                <li>Develop and validate statistical and machine-learning models to support forecasting and strategic direction.</li>
+                <li>Translate complex model output into clear reporting for senior stakeholders and decision-makers.</li>
+                <li>Use data visualisation and structured analysis to communicate trends, risks, and opportunities clearly.</li>
+              </ul>
+            </article>
 
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="grid">
-        <div class="card small">
-          <h3>Customer Segmentation</h3>
-          <p>K-means, KDE, and KNN for actionable customer insight.</p>
+            <article class="experience-card reveal">
+              <div class="experience-top">
+                <div>
+                  <h3>University of Pretoria</h3>
+                  <h4>Statistic and Data Science Tutor</h4>
+                  <p class="experience-meta">Feb 2021 – Mar 2023 | Part-time</p>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+
+              <ul class="experience-points">
+                <li>Supported students through one-on-one tutoring in mathematics and statistics.</li>
+                <li>Used visual explanation and practical examples to strengthen understanding of difficult concepts.</li>
+                <li>Helped students improve performance by focusing on weak areas systematically.</li>
+              </ul>
+            </article>
+
+            <article class="experience-card reveal">
+              <div class="experience-top">
+                <div>
+                  <h3>Hoerskool Eldoraigne</h3>
+                  <h4>Performance Analyst</h4>
+                  <p class="experience-meta">Feb 2021 – Aug 2022 | Contract</p>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+
+              <ul class="experience-points">
+                <li>Applied predictive analysis techniques to support tactical planning and player development.</li>
+                <li>Delivered performance feedback using data-driven insights to improve team efficiency.</li>
+                <li>Connected sporting intuition with structured analytics in a high-performance environment.</li>
+              </ul>
+            </article>
+
+            <article class="experience-card reveal">
+              <div class="experience-top">
+                <div>
+                  <h3>Venwood &amp; Baker Electrical</h3>
+                  <h4>Business Analyst</h4>
+                  <p class="experience-meta">Jun 2022 – Jul 2022 | Part-time</p>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+
+              <ul class="experience-points">
+                <li>Monitored operational processes and collected relevant information for reporting and analysis.</li>
+                <li>Analysed workflows to identify opportunities for greater efficiency and improvement.</li>
+                <li>Supported management with structured observations and business-facing insights.</li>
+              </ul>
+            </article>
+          </div>
         </div>
-        <div class="card small">
-          <h3>SPC Monitoring System</h3>
-          <p>Automated monitoring with predictive analytics for process optimisation.</p>
-        </div>
-        <div class="card small">
-          <h3>Advanced Statistical Modelling</h3>
-          <p>Bootstrap inference, nonlinear regression, and cross-validation.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="skills" class="section alt">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="grid">
-        <div class="card small">
-          <h3>Tools</h3>
-          <p>R, Python, SQL, SAS, Snowflake, LaTeX</p>
-        </div>
-        <div class="card small">
-          <h3>Analytics</h3>
-          <p>Statistical Modelling, Machine Learning, Forecasting, Visualisation</p>
-        </div>
-        <div class="card small">
-          <h3>Professional</h3>
-          <p>Communication, Collaboration, Time Management, Work Ethic</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <div class="section-number">03</div>
+      </section>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <div class="grid">
-        <div class="card small"><h3>Email</h3><p>joshvdb07@gmail.com</p></div>
-        <div class="card small"><h3>Phone</h3><p>+27 82 388 7030</p></div>
-        <div class="card small"><h3>LinkedIn</h3><p><a href="https://www.linkedin.com/in/joshua-van-den-bergh-159767226/" target="_blank">Open Profile</a></p></div>
-      </div>
-    </div>
-  </section>
+      <section id="skills" class="section section-dark alt-section">
+        <div class="container">
+          <div class="section-label reveal">
+            <span class="label-line"></span>
+            <span>Skills</span>
+          </div>
+
+          <h2 class="section-heading reveal">
+            Tools &amp; <span class="gold-italic">technologies</span><br />
+            I work with.
+          </h2>
+
+          <div class="skills-filters reveal">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="tools">Tools</button>
+            <button class="filter-btn" data-filter="analytics">Analytics</button>
+            <button class="filter-btn" data-filter="business">Business</button>
+          </div>
+
+          <div class="skills-grid reveal" id="skillsGrid">
+            <div class="skill-tile" data-category="tools">
+              <span class="skill-name">R / RStudio</span>
+              <span class="skill-type">Tools</span>
+            </div>
+            <div class="skill-tile" data-category="tools">
+              <span class="skill-name">Python</span>
+              <span class="skill-type">Tools</span>
+            </div>
+            <div class="skill-tile" data-category="tools">
+              <span class="skill-name">SQL</span>
+              <span class="skill-type">Tools</span>
+            </div>
+            <div class="skill-tile" data-category="tools">
+              <span class="skill-name">SAS</span>
+              <span class="skill-type">Tools</span>
+            </div>
+            <div class="skill-tile" data-category="tools">
+              <span class="skill-name">Snowflake</span>
+              <span class="skill-type">Tools</span>
+            </div>
+            <div class="skill-tile" data-category="tools">
+              <span class="skill-name">LaTeX</span>
+              <span class="skill-type">Tools</span>
+            </div>
+
+            <div class="skill-tile" data-category="analytics">
+              <span class="skill-name">Statistical Modelling</span>
+              <span class="skill-type">Analytics</span>
+            </div>
+            <div class="skill-tile" data-category="analytics">
+              <span class="skill-name">Machine Learning</span>
+              <span class="skill-type">Analytics</span>
+            </div>
+            <div class="skill-tile" data-category="analytics">
+              <span class="skill-name">Forecasting</span>
+              <span class="skill-type">Analytics</span>
+            </div>
+            <div class="skill-tile" data-category="analytics">
+              <span class="skill-name">Simulation</span>
+              <span class="skill-type">Analytics</span>
+            </div>
+            <div class="skill-tile" data-category="analytics">
+              <span class="skill-name">Data Validation</span>
+              <span class="skill-type">Analytics</span>
+            </div>
+            <div class="skill-tile" data-category="analytics">
+              <span class="skill-name">Data Visualisation</span>
+              <span class="skill-type">Analytics</span>
+            </div>
+
+            <div class="skill-tile" data-category="business">
+              <span class="skill-name">Communication</span>
+              <span class="skill-type">Business</span>
+            </div>
+            <div class="skill-tile" data-category="business">
+              <span class="skill-name">Collaboration</span>
+              <span class="skill-type">Business</span>
+            </div>
+            <div class="skill-tile" data-category="business">
+              <span class="skill-name">Time Management</span>
+              <span class="skill-type">Business</span>
+            </div>
+            <div class="skill-tile" data-category="business">
+              <span class="skill-name">Work Ethic</span>
+              <span class="skill-type">Business</span>
+            </div>
+          </div>
+
+          <div class="skill-detail-box reveal">
+            Click any filter to focus on a category.
+          </div>
+        </div>
+
+        <div class="section-number">04</div>
+      </section>
+
+      <section id="projects" class="section section-dark">
+        <div class="container">
+          <div class="section-label reveal">
+            <span class="label-line"></span>
+            <span>Projects</span>
+          </div>
+
+          <h2 class="section-heading reveal">
+            Selected <span class="gold-italic">work</span> &amp;<br />
+            case studies.
+          </h2>
+
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-tag-wrap">
+                <span class="project-tag">Customer Analytics</span>
+                <span class="project-number">01</span>
+              </div>
+              <h3>Customer Segmentation &amp; Classification</h3>
+              <p>
+                Built a segmentation and classification workflow using K-means,
+                KDE, and KNN to support targeted marketing and more actionable
+                customer insight.
+              </p>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-tag-wrap">
+                <span class="project-tag">Quality Analytics</span>
+                <span class="project-number">02</span>
+              </div>
+              <h3>SPC Monitoring &amp; Predictive Analytics</h3>
+              <p>
+                Designed and implemented an SPC system with automated monitoring
+                and predictive analytics to improve process quality and early
+                issue detection.
+              </p>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-tag-wrap">
+                <span class="project-tag">Statistical Modelling</span>
+                <span class="project-number">03</span>
+              </div>
+              <h3>Advanced Statistical Modelling</h3>
+              <p>
+                Applied nonparametric regression, bootstrap inference, nonlinear
+                regression, simulation, and cross-validation to improve
+                predictive performance on real-world data.
+              </p>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-tag-wrap">
+                <span class="project-tag">Research</span>
+                <span class="project-number">04</span>
+              </div>
+              <h3>Contaminated Lognormal Research</h3>
+              <p>
+                Investigated distribution modality by developing a robust
+                contaminated lognormal model for skewed data with outliers and
+                validating it through simulation studies.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="section-number">05</div>
+      </section>
+
+      <section id="certifications" class="section section-dark alt-section">
+        <div class="container">
+          <div class="section-label reveal">
+            <span class="label-line"></span>
+            <span>Education &amp; Achievements</span>
+          </div>
+
+          <h2 class="section-heading reveal">
+            Credentials &amp; <span class="gold-italic">achievements</span>.
+          </h2>
+
+          <div class="subsection-heading reveal">Education</div>
+
+          <div class="cert-grid reveal">
+            <article class="cert-card">
+              <span class="cert-badge">Honours</span>
+              <h3>BCom Honours in Statistics and Data Sciences</h3>
+              <p>University of Pretoria</p>
+              <span class="cert-date">Feb 2025 – Nov 2025</span>
+            </article>
+
+            <article class="cert-card">
+              <span class="cert-badge">Degree</span>
+              <h3>BCom in Statistics and Data Sciences</h3>
+              <p>University of Pretoria</p>
+              <span class="cert-date">Feb 2021 – Nov 2024</span>
+            </article>
+
+            <article class="cert-card">
+              <span class="cert-badge">School</span>
+              <h3>Jeppe High School for Boys</h3>
+              <p>Bachelor’s Pass | APS: 32</p>
+              <span class="cert-date">Jan 2015 – Dec 2020</span>
+            </article>
+          </div>
+
+          <div class="subsection-heading reveal">Achievements</div>
+
+          <div class="cert-grid reveal">
+            <article class="cert-card">
+              <span class="cert-badge">Academic</span>
+              <h3>Selected for Honours</h3>
+              <p>Chosen as one of twenty students based on academic excellence.</p>
+            </article>
+
+            <article class="cert-card">
+              <span class="cert-badge">Sport</span>
+              <h3>Sports Scholarship</h3>
+              <p>Awarded sports scholarship to Jeppe High School for Boys.</p>
+            </article>
+
+            <article class="cert-card">
+              <span class="cert-badge">Leadership</span>
+              <h3>Provincial Hockey Captain</h3>
+              <p>Captained a provincial hockey team to national victory.</p>
+            </article>
+
+            <article class="cert-card">
+              <span class="cert-badge">Funding</span>
+              <h3>NSFAS Bursary</h3>
+              <p>Received NSFAS bursary to complete tertiary studies.</p>
+            </article>
+
+            <article class="cert-card">
+              <span class="cert-badge">University Sport</span>
+              <h3>Tuks 1st Team Hockey</h3>
+              <p>Represented University of Pretoria 1st team hockey in 2023/2024.</p>
+            </article>
+
+            <article class="cert-card">
+              <span class="cert-badge">School Leadership</span>
+              <h3>Boarding House Prefect</h3>
+              <p>Served as boarding house prefect at Jeppe High School for Boys.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="section-number">06</div>
+      </section>
+
+      <section id="contact" class="section section-dark">
+        <div class="container contact-wrap">
+          <div class="section-label reveal">
+            <span class="label-line"></span>
+            <span>Contact</span>
+          </div>
+
+          <h2 class="section-heading reveal">
+            Let’s build something<br />
+            <span class="gold-italic">valuable</span>.
+          </h2>
+
+          <div class="contact-grid reveal">
+            <div class="contact-card">
+              <h3>Email</h3>
+              <a href="mailto:joshvdb07@gmail.com">joshvdb07@gmail.com</a>
+            </div>
+
+            <div class="contact-card">
+              <h3>Phone</h3>
+              <a href="tel:+27823887030">+27 82 388 7030</a>
+            </div>
+
+            <div class="contact-card">
+              <h3>LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/joshua-van-den-bergh-159767226/" target="_blank">
+                Open Profile
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
