@@ -4,401 +4,141 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Joshua van den Bergh | Data Scientist</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #f0fdf4;
-      color: #064e3b;
-      line-height: 1.6;
-    }
-
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: white;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-      z-index: 1000;
-      padding: 15px 0;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #16a34a;
-      font-weight: bold;
-      font-size: 15px;
-    }
-
-    nav a:hover {
-      color: #14532d;
-    }
-
-    header {
-      background: linear-gradient(135deg, #064e3b, #16a34a);
-      color: white;
-      text-align: center;
-      padding: 140px 20px 100px;
-    }
-
-    header h1 {
-      font-size: 52px;
-      margin-bottom: 10px;
-    }
-
-    header h2 {
-      font-size: 24px;
-      font-weight: normal;
-      margin-bottom: 20px;
-    }
-
-    header p {
-      max-width: 800px;
-      margin: 0 auto 25px;
-      font-size: 18px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: white;
-      color: #16a34a;
-      padding: 12px 22px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 6px;
-    }
-
-    .btn:hover {
-      background: #dcfce7;
-    }
-
-    section {
-      max-width: 1000px;
-      margin: 50px auto;
-      padding: 40px 25px;
-      background: white;
-      border-radius: 18px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-    }
-
-    section h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-      color: #166534;
-      text-align: center;
-    }
-
-    .about-text {
-      text-align: center;
-      max-width: 850px;
-      margin: 0 auto;
-      font-size: 17px;
-    }
-
-    .card {
-      margin-bottom: 22px;
-      padding: 22px;
-      border-left: 5px solid #16a34a;
-      background: #f0fdf4;
-      border-radius: 10px;
-    }
-
-    .card h3 {
-      color: #14532d;
-      margin-bottom: 6px;
-    }
-
-    .card span {
-      font-size: 14px;
-      color: #166534;
-      font-weight: bold;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-
-    .skill-box, .achievement-box, .contact-box {
-      background: #f0fdf4;
-      padding: 20px;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-    }
-
-    ul.clean {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    ul.clean li {
-      margin-bottom: 10px;
-      padding-left: 18px;
-      position: relative;
-    }
-
-    ul.clean li::before {
-      content: "•";
-      color: #16a34a;
-      font-weight: bold;
-      position: absolute;
-      left: 0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 20px 50px;
-      color: #166534;
-      font-size: 14px;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 38px;
-      }
-
-      header h2 {
-        font-size: 20px;
-      }
-
-      nav ul {
-        gap: 14px;
-        padding: 0 10px;
-      }
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <header>
-    <h1>Joshua van den Bergh</h1>
-    <h2>Data Scientist | Statistics & Data Science</h2>
-    <p>
-      Transforming complex data into clear, actionable insights that drive meaningful change,
-      strategy, forecasting, and business decisions.
-    </p>
-    <a class="btn" href="mailto:joshvdb07@gmail.com">Email Me</a>
-    <a class="btn" href="https://www.linkedin.com/in/joshua-van-den-bergh-159767226/" target="_blank">LinkedIn</a>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">Joshua van den Bergh</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p class="about-text">
-      I am a statistics and data science professional with a strong academic background and practical
-      experience in turning complex data into executive-ready insight. I enjoy building models,
-      validating results, and communicating findings clearly to support better business decisions.
-      My experience spans insurance, business analysis, teaching, and sports performance analytics.
-    </p>
-  </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
-
-    <div class="card">
-      <h3>Data Scientist — Dotsure Insurance Company</h3>
-      <span>Dec 2025 – Present</span>
-      <p>
-        Delivering executive-ready insights from large-scale data using advanced analytics,
-        developing and validating statistical and machine-learning models to support forecasting,
-        strategic direction, and clear visualisation of results for senior reporting.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Statistic and Data Science Tutor — University of Pretoria</h3>
-      <span>Feb 2021 – Mar 2023</span>
-      <p>
-        Helped students strengthen mathematics and statistics understanding through one-on-one
-        tutoring, visual explanations, and targeted support in weak areas.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Performance Analyst — Hoerskool Eldoraigne</h3>
-      <span>Feb 2021 – Aug 2022</span>
-      <p>
-        Applied predictive analysis techniques to support strategy, optimise player performance,
-        and provide athletes with data-driven feedback.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Business Analyst — Venwood & Baker Electrical</h3>
-      <span>Jun 2022 – Jul 2022</span>
-      <p>
-        Monitored organisational processes, collected relevant information, reported to management,
-        and analysed data to identify efficiency improvements.
-      </p>
-    </div>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-
-    <div class="card">
-      <h3>BCom Honours in Statistics and Data Sciences — University of Pretoria</h3>
-      <span>Feb 2025 – Nov 2025</span>
-      <p>
-        Focus areas included multivariate techniques, regression analysis, text and behavioural analytics,
-        sampling techniques, simulation and computation, and statistical learning.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>BCom in Statistics and Data Sciences — University of Pretoria</h3>
-      <span>Feb 2021 – Nov 2024</span>
-      <p>
-        Coursework included time series, forecasting, statistical inference, regression analysis,
-        experimental design, multivariate statistics, supervised learning, informatics, and economics.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Jeppe High School for Boys</h3>
-      <span>Jan 2015 – Dec 2020</span>
-      <p>Bachelor’s Pass | APS: 32</p>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Projects & Research</h2>
-
-    <div class="card">
-      <h3>Customer Segmentation & Classification</h3>
-      <p>
-        Created a customer segmentation and classification system using K-means, KDE, and KNN
-        to support targeted marketing and actionable insight.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>SPC Monitoring & Predictive Analytics</h3>
-      <p>
-        Designed and implemented an SPC system with automated monitoring and predictive analytics
-        to improve processes and quality outcomes.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Advanced Statistical Modelling</h3>
-      <p>
-        Applied nonparametric regression, bootstrap inference, nonlinear regression,
-        simulation, and cross-validation to improve predictive performance on real data.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Research: Contaminated Lognormal Model</h3>
-      <p>
-        Investigated the modality of distributions by developing a robust contaminated lognormal model
-        for skewed data with outliers and validating it through simulation studies.
-      </p>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="grid">
-      <div class="skill-box">
-        <h3>Technical Tools</h3>
-        <ul class="clean">
-          <li>R / RStudio</li>
-          <li>Python</li>
-          <li>SQL</li>
-          <li>SAS</li>
-          <li>Snowflake</li>
-          <li>LaTeX</li>
-        </ul>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">Data Scientist | Statistics & Data Science</p>
+        <h1>Joshua van den Bergh</h1>
+        <p class="lead">
+          Transforming complex data into clear, actionable insights that drive strategy,
+          forecasting, and business decisions.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Contact Me</a>
+          <a href="assets/cv.pdf" class="btn btn-secondary" target="_blank">Download CV</a>
+        </div>
       </div>
 
-      <div class="skill-box">
-        <h3>Analytics</h3>
-        <ul class="clean">
-          <li>Statistical Modelling</li>
-          <li>Machine Learning</li>
-          <li>Forecasting</li>
-          <li>Data Validation</li>
-          <li>Simulation</li>
-          <li>Data Visualisation</li>
-        </ul>
-      </div>
-
-      <div class="skill-box">
-        <h3>Professional Skills</h3>
-        <ul class="clean">
-          <li>Communication</li>
-          <li>Collaboration</li>
-          <li>Time Management</li>
-          <li>Work Ethic</li>
-          <li>Teamwork</li>
-          <li>Punctuality</li>
-        </ul>
+      <div class="hero-card">
+        <img src="assets/profile.jpg" alt="Joshua van den Bergh profile photo" />
+        <div class="hero-card-content">
+          <h3>Professional Profile</h3>
+          <p>Focused on analytics, modelling, forecasting, and executive-ready insight.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="achievements">
-    <h2>Achievements</h2>
-    <div class="grid">
-      <div class="achievement-box">Selected as one of twenty students for Honours based on academic excellence</div>
-      <div class="achievement-box">Awarded sports scholarship to Jeppe High School for Boys</div>
-      <div class="achievement-box">Received NSFAS bursary to complete studies</div>
-      <div class="achievement-box">Captained a provincial hockey team to national victory</div>
-      <div class="achievement-box">Represented University of Pretoria 1st team hockey (2023/2024)</div>
-      <div class="achievement-box">Served as boarding house prefect in 2020</div>
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a statistics and data science professional with strong academic grounding and
+        practical experience turning complex data into executive-ready insights.
+      </p>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="grid">
-      <div class="contact-box">
-        <h3>Email</h3>
-        <p>joshvdb07@gmail.com</p>
+  <section id="experience" class="section alt">
+    <div class="container">
+      <h2>Experience</h2>
+
+      <div class="card">
+        <h3>Data Scientist — Dotsure Insurance Company</h3>
+        <span>Dec 2025 – Present</span>
+        <p>Delivering executive-ready insights from large-scale data using advanced analytics, developing and validating models, and reporting findings clearly to senior stakeholders.</p>
       </div>
-      <div class="contact-box">
-        <h3>Phone</h3>
-        <p>+27 82 388 7030</p>
+
+      <div class="card">
+        <h3>Statistic and Data Science Tutor — University of Pretoria</h3>
+        <span>Feb 2021 – Mar 2023</span>
+        <p>Supported students through one-on-one tutoring in mathematics and statistics using practical explanation and visual learning.</p>
       </div>
-      <div class="contact-box">
-        <h3>LinkedIn</h3>
-        <p><a href="https://www.linkedin.com/in/joshua-van-den-bergh-159767226/" target="_blank">Open Profile</a></p>
+
+      <div class="card">
+        <h3>Performance Analyst — Hoerskool Eldoraigne</h3>
+        <span>Feb 2021 – Aug 2022</span>
+        <p>Applied predictive analysis techniques to improve strategy and athlete performance.</p>
+      </div>
+
+      <div class="card">
+        <h3>Business Analyst — Venwood & Baker Electrical</h3>
+        <span>Jun 2022 – Jul 2022</span>
+        <p>Monitored organisational processes, analysed operational information, and identified efficiency improvements.</p>
       </div>
     </div>
   </section>
 
-  <footer>
-    <p>Joshua van den Bergh Portfolio</p>
-  </footer>
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card small">
+          <h3>Customer Segmentation</h3>
+          <p>K-means, KDE, and KNN for actionable customer insight.</p>
+        </div>
+        <div class="card small">
+          <h3>SPC Monitoring System</h3>
+          <p>Automated monitoring with predictive analytics for process optimisation.</p>
+        </div>
+        <div class="card small">
+          <h3>Advanced Statistical Modelling</h3>
+          <p>Bootstrap inference, nonlinear regression, and cross-validation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card small">
+          <h3>Tools</h3>
+          <p>R, Python, SQL, SAS, Snowflake, LaTeX</p>
+        </div>
+        <div class="card small">
+          <h3>Analytics</h3>
+          <p>Statistical Modelling, Machine Learning, Forecasting, Visualisation</p>
+        </div>
+        <div class="card small">
+          <h3>Professional</h3>
+          <p>Communication, Collaboration, Time Management, Work Ethic</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="grid">
+        <div class="card small"><h3>Email</h3><p>joshvdb07@gmail.com</p></div>
+        <div class="card small"><h3>Phone</h3><p>+27 82 388 7030</p></div>
+        <div class="card small"><h3>LinkedIn</h3><p><a href="https://www.linkedin.com/in/joshua-van-den-bergh-159767226/" target="_blank">Open Profile</a></p></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
